@@ -1,0 +1,112 @@
+---
+title: "Understanding Tree Diagrams"
+theme: "superhero"
+fontsize: 16px
+format: 
+    closeread-html:
+        cr-section:
+            layout: "sidebar-left"
+        cr-style:
+            section-background-color: "#08508a"
+            narrative-background-color-overlay: "#08508a"
+            narrative-text-color-overlay: "#08508a"
+            narrative-border-radius: 5px
+            narrative-overlay-max-width: 60%
+css: style.css
+project:
+    type: website
+    output-dir: docs
+---
+
+:::{.cr-section}
+
+A tree diagram is a tool used in mathematics, probability, and statistics to calculate the number of possible outcomes of an event or problem and to systematically list those potential outcomes. @cr-layout1
+
+In data visualization, this technique is also used to visualize hierarchical relationships within data.
+
+They can also be referred to as `organizational charts` or `linkage trees`.
+
+Tree diagrams can have different layouts, such as `radial`, `vertical`, or `horizontal`, but the underlying concept remains the same.
+
+**Radial layout** @cr-layout1
+
+:::{#cr-layout1}
+![](img/tree_radial.jpg){width=100%}
+:::
+
+**Horizontal layout** @cr-layout2
+
+:::{#cr-layout2}
+![](img/tree_hor_1.jpg){width=100%}
+:::
+
+**Vertical layout** @cr-layout3
+
+:::{#cr-layout3}
+![](img/tree_vert_3.jpg){width=100%}
+:::
+
+:::{focus-on="cr-tree-rad" .scale-to-fill}
+Now, let's examine the structure in more detail.
+:::
+
+:::{focus-on="cr-tree-rad"}
+Tree diagrams comprise two major components:
+
+1. Nodes
+2. Branches
+:::
+:::{focus-on="cr-tree-rad"}
+
+### **Nodes:**
+---
+
+Nodes represent the different elements or entities within a hierarchy. Each node typically signifies a decision, category, or outcome, depending on the context. In this chart, each node is represented by a point marker. [@cr-tree-rad]{scale-by="2" pan-to="75%,-50%"}
+
+:::
+
+:::{focus-on="cr-tree-rad"}
+1. **Root Node**: Root nodes are the topmost elements and have no parent.
+
+
+2. **Internal Nodes**: Internal nodes represent intermediary elements that have both parent and child nodes.
+
+3. **Leaf Nodes (End Nodes)**: Leaf nodes are the endpoints, representing the final or terminal elements in the hierarchy.
+
+:::
+
+Tree diagrams are very useful in various fields, such as organizational management, decision analysis, and data classification, as they clearly depict the structure and relationships within a system.
+
+And, of course, they are also used in many creative and visually appealing ways to achieve these purposes. Now, let's look at a few examples!
+
+Like this one by Andreea Scintei [Andreea Scintei](#)[^1], where it was used to visualize the relationships in *The Expanse* [@cr-the-expanse]{scale-by="1.3" pan-to="-25%,0%"}.
+
+And check this one out, also by [Tristan Guillevin](#), the mastermind behind one of the most intuitive tree diagram generators[^2] you'll find anywhere on the internet (and did I mention it's free? 😉). @cr-tree-radial2
+
+Okay, the last one (I promise 😂): Here is another tree diagram by [Patrick Sarsfield](https://public.tableau.com/app/profile/patrick.sarsfield/vizzes) [^2] @cr-tree-radial3
+
+
+:::{#cr-tree-rad}
+![](img/tree_radial.jpg)
+:::
+
+:::{#cr-the-expanse}
+![](img/the_expanse.png)
+:::
+
+:::{#cr-tree-radial2}
+![](img/tree_radial2.png)
+:::
+
+:::{#cr-tree-radial3}
+![](img/tree_radial3.png)
+:::
+
+[^1]: _Image Credit [Andreea Scintei](https://public.tableau.com/app/profile/andreea.scintei/viz/TheExpanseDataPlusTV/DataPlusTVTheExpanse) via Tableau Public._
+
+[^2]: _[LaDataViz](https://www.ladataviz.com/tools/advviz/tree) develops a range of tools designed to simplify and enhance the data visualization process, particularly for Tableau users._
+
+[^3]: _Image Credit: [Patrick Sarsfield](https://public.tableau.com/app/profile/patrick.sarsfield/vizzes)_
+
+Follow me on LinkedIn for more data visualization and storytelling tips! [Kenneth Odoh](https://linkedin.com/in/kenneth-odoh)
+:::
